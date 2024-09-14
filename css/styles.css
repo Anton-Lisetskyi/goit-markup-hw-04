@@ -100,7 +100,7 @@ button {
     justify-content: start;
     align-items: center;
     width: 1158px;
-        padding: 0 15px;
+    padding: 0 15px;
 }
 
 .header-nav {
@@ -140,9 +140,33 @@ button {
     flex-grow: 1;
 }
 
+.header-nav-item {
+    color: var(--color-primary-dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 0;
+}
+
 .nav-html {
     display: flex;
     padding: 24px 0;
+    position: relative;
+}
+
+.nav-html.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--color-primary-state);
 }
 
 .header-nav-item {
@@ -275,7 +299,7 @@ button {
     color: var(--color-text-primary);
 }
 
-.info-icon-wrapper {
+/* .info-icon-wrapper {
     background-color: var(--color-light);
     justify-content: center;
     align-items: center;
@@ -285,7 +309,7 @@ button {
     border: 1px solid var(--color-text-subtitle);
     border-radius: 4px;
     color: rgb(var(--cl-accent));
-}
+} */
 
 
 /* .info-wrapper {
@@ -378,9 +402,33 @@ button {
 }
 
 .member-title {
-    padding: 32px 0;
+    padding: 32px 0 8px 0;
     text-align: center;
 }
+
+.team-social-wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    gap: 24px;
+}
+
+.social-item {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background-color: var(--color-primary-brand);    
+}
+
+.icon-socials {   
+fill: var(--color-white-background);
+}
+
 
 /* #endregion */
 
@@ -487,6 +535,7 @@ button {
     padding: 100px 0;
 }
 
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -511,6 +560,14 @@ button {
     color: var(--color-light);
     max-width: 264px;
     max-width: 264px;
+}
+
+.footer-social-text {
+    color: var(--color-white-background);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
 }
 
 /* #endregion */
