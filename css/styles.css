@@ -91,7 +91,7 @@ button {
 /* #region header*/
 
 .header {
-    border-bottom: 1px solid #e7e9fc;
+    /* border-bottom: 1px solid #e7e9fc; */
     margin: 0 auto;
 }
 
@@ -281,6 +281,17 @@ button {
     padding: 120px 0px;
 }
 
+.info-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    margin-bottom: 8px;
+    background-color: var(--color-light);
+    border: 1px solid var(--color-text-subtitle);
+    border-radius: 4px;
+}
+
 .info-text-secondary {
     font-weight: 500;
     font-size: 20px;
@@ -298,36 +309,6 @@ button {
     letter-spacing: 0.02em;
     color: var(--color-text-primary);
 }
-
-/* .info-icon-wrapper {
-    background-color: var(--color-light);
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 24px;
-    margin-bottom: 8px;
-    border: 1px solid var(--color-text-subtitle);
-    border-radius: 4px;
-    color: rgb(var(--cl-accent));
-} */
-
-
-/* .info-wrapper {
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 62px;
-        height: 62px;
-        margin-bottom: 22px;
-        border: 1px solid rgb(var(--cl-white) / 50%);
-        border-radius: 50%;
-        color: rgb(var(--cl-accent));
-} */
-
-/* .info-icon {
-    fill: #2e2f42;
-    background-color: #2e2f42;
-} */
 
 .visually-hidden {
     position: absolute;
@@ -395,6 +376,9 @@ button {
     background-color: var(--color-white-background);
     border-radius: 0px 0px 4px 4px; 
     flex-basis: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-set-item:last-child {
@@ -406,8 +390,8 @@ button {
     text-align: center;
 }
 
-.team-social-wrapper {
-    display: block;
+.social-wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row;
@@ -422,7 +406,12 @@ justify-content: center;
 align-items: center;
 width: 40px;
 height: 40px;
-background-color: var(--color-primary-brand);    
+border-radius: 50%;
+background-color: var(--color-primary-brand); 
+}
+
+.social-item:hover {
+background-color: var(--color-success);
 }
 
 .icon-socials {   
@@ -533,8 +522,15 @@ fill: var(--color-white-background);
 .footer {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
+
 }
 
+.footer-container .container {
+    display: flex;
+    width: 1158px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -562,12 +558,13 @@ fill: var(--color-white-background);
     max-width: 264px;
 }
 
+
 .footer-social-text {
     color: var(--color-white-background);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 /* #endregion */
