@@ -87,18 +87,20 @@ button {
 
 .header {
     margin: 0 auto;
+    max-width: 1440px;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 156px;
     border-bottom: 1px solid var(--color-accent);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-            0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    
 }
 
 .header-nav {
@@ -158,6 +160,11 @@ button {
     position: relative;
 }
 
+.nav-html.active {
+    color: var(--color-primary-state);
+    transition: transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-html.active::after {
     content: '';
     position: absolute;
@@ -171,7 +178,6 @@ button {
 
 .header-nav-item {
     color: var(--color-primary-dark);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-item a:hover {
@@ -218,13 +224,14 @@ button {
 
 /* #region hero */
 
-.hero-container {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/general/people-office.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: 1440px auto;
-    padding: 188px 0;
+.hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/general/people-office.jpg);
+            background-repeat: no-repeat;
+            max-width: 1440px;
+            background-position: center;
+            background-size: cover;
+            padding: 188px 0;
+            margin: 0 auto;
 }
 
 .hero-text-primary {
