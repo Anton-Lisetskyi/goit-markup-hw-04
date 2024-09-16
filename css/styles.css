@@ -105,6 +105,12 @@ button {
     height: 24px;
 }
 
+.icon-socials-team {
+    fill: var(--color-light);
+    width: 16px;
+    height: 16px;
+}
+
 /* #endregion */
 
 /* #region header*/
@@ -443,7 +449,6 @@ button {
     gap: 24px;
 }
 
-
 /* #endregion */
 
 /* #region portfolio */
@@ -625,9 +630,6 @@ button {
     margin: 0;
 }
 
-.social-link {
-
-}
 
 
 
