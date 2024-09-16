@@ -162,7 +162,7 @@ button {
 
 .nav-html.active {
     color: var(--color-primary-state);
-    transition: transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-html.active::after {
@@ -466,8 +466,6 @@ fill: var(--color-white-background);
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    
-    
 }
 
 .portfolio-card-set-item {
@@ -482,16 +480,14 @@ fill: var(--color-white-background);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
             0px 1px 1px 0px rgba(46, 47, 66, 0.16),
             0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-    
 }
 
 .overlay {
     position: absolute;
-    
     top: 0px;
     left: 0px;
     background-color: var(--color-primary-brand);
-    transform: translateY(150%);
+    transform: translateY(420px;)
 }
 
 .portfolio-card-set-item:hover .overlay {
@@ -515,12 +511,17 @@ fill: var(--color-white-background);
     margin-right: 0;
 }
 
+.portfolio-img {
+    margin-bottom: 32px;
+}
+
 .portfolio-text-secondary {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-primary-dark);
+    padding: 0 16px;
     margin-bottom: 8px
 }
 
@@ -530,10 +531,10 @@ fill: var(--color-white-background);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text-primary);
+    padding: 0 16px 32px;
 }
 
 .app-titel {
-    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
