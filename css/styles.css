@@ -478,21 +478,12 @@ fill: var(--color-white-background);
 
 .portfolio-card-set-item:hover {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-            0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
-.overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: var(--color-primary-brand);
-    transform: translateY(420px;)
-}
-
-.portfolio-card-set-item:hover .overlay {
-    opacity: 1;
-    transform: translateY(0%);    
+.portfolio-card-set-item:hover .overlay-text {
+    transform: translateY(0%);
 }
 
 .overlay-text {
@@ -505,6 +496,11 @@ fill: var(--color-white-background);
     letter-spacing: 0.02em;
     text-align: start;
     padding: 32px 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-primary-brand);
+    transform: translateY(420px);
 }
 
 .portfolio-card-set-item:nth-child(3n) {
@@ -513,6 +509,7 @@ fill: var(--color-white-background);
 
 .portfolio-img {
     margin-bottom: 32px;
+    
 }
 
 .portfolio-text-secondary {
